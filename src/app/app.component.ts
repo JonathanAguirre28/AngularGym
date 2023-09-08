@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularGymPuma';
+  ejercicios: string = '';
+
+  cualEsElEjercicio(event:string) {
+    console.log("entre", event)
+    alert(event);
+  }
 }

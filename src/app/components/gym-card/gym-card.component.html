@@ -1,0 +1,13 @@
+<div class="gym-card">
+  <img class="gym-card__img" src= "{{ image }}" 
+  alt="gym img" />
+
+  <div class="gym-card__info">
+    <div class="gym-card__info-title"> {{ title }} </div>
+  </div>
+
+    <div class="gym-card__data">
+        <div class="gym-card__data-lasting"> {{ data }} </div>
+        <button class="gym-card__data-lasting-button" (click)="emitirEjercicios()"> Ejercicios </button>
+    </div>
+  </div>

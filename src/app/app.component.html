@@ -1,2 +1,65 @@
 <app-navbar></app-navbar>
+
+
+<div class="gym-container">
+  <app-gym-card [title]="'SERIE DE PECHO'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'" 
+  [image]="'https://skepticaldragoon.es/wp-content/uploads/2019/08/ejercicios-pecho.jpg'" 
+  (ejercicios)="cualEsElEjercicio($event)">
+  
+  </app-gym-card>
+
+  <app-gym-card 
+  [title]="'SERIE DE TRICEPS'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'" 
+  [image]="'https://skepticaldragoon.es/wp-content/uploads/2019/08/ejercicios-triceps.jpg'">
+  </app-gym-card>
+
+  <app-gym-card 
+  [title]="'SERIE DE BICEPS'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'" 
+  [image]="'https://i.ytimg.com/vi/2ql_2lw5v-A/maxresdefault.jpg'">
+  </app-gym-card>
+
+  <app-gym-card 
+  [title]="'SERIE DE HOMBRO'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'" 
+  [image]="'https://i.ytimg.com/vi/QhLtriTDdeo/sddefault.jpg'">
+  </app-gym-card>
+
+  <app-gym-card 
+  [title]="'SERIE DE CUADRICEPS'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'" 
+  [image]="'https://skepticaldragoon.es/wp-content/uploads/2019/08/ejercicios-cu%C3%A1driceps-2.jpg'">
+  </app-gym-card>
+
+  <app-gym-card 
+  [title]="'SERIE DE ISQUIOTIBIALES'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'"
+  [image]="'https://reevolvefit.com/wp-content/uploads/2019/11/ISQUIO.jpg'">
+  </app-gym-card>
+
+  <app-gym-card 
+  [title]="'SERIE DE GEMELOS'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'" 
+  [image]="'https://i.ytimg.com/vi/lefpyNtM9ic/maxresdefault.jpg'">
+  </app-gym-card>
+
+  <app-gym-card 
+  [title]="'SERIE DE ABDOMINALES'" 
+  [data]="'Ejercicios gratias para realizar en casa o en el gym'"
+  [button]="'Entrar'" 
+  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'">
+  </app-gym-card>
+</div>
+
+
+
 <router-outlet></router-outlet>

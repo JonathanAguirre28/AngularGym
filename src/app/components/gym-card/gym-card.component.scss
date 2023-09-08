@@ -1,0 +1,37 @@
+.gym-card { 
+    width: 237px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__img {
+        height: 240px;
+        width: 240px;
+    }
+    &__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: red;
+    }
+    &-title {
+        text-align: center;
+        font-weight: 800;
+        font-size: 18px;
+    }
+   &__data {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   }
+   &__data-lasting {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+   }
+   &__data-lasting-button {
+    border-radius: 10px;
+    cursor: pointer;
+   }
+
+}
