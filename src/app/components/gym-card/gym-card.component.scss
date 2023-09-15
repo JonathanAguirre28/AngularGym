@@ -1,37 +1,37 @@
 .gym-card { 
     width: 237px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 5vh;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
     &__img {
         height: 240px;
         width: 240px;
+        box-shadow: 5px 8px 5px  rgb(93, 93, 93);
+        border-radius: 10px;
+    }
+    &__img-text{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
     }
     &__info{
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
-        color: red;
     }
-    &-title {
+    &__info-title {
         text-align: center;
-        font-weight: 800;
+        font-weight: 600;
         font-size: 18px;
+        border-radius: 5px;
+        background-color: brown;
+        cursor: pointer;
     }
-   &__data {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-   }
-   &__data-lasting {
-    font-size: 12px;
-    text-align: center;
-    font-weight: 600;
-   }
-   &__data-lasting-button {
-    border-radius: 10px;
-    cursor: pointer;
-   }
-
 }
