@@ -1,8 +1,13 @@
-<div class="gym-card">
-  <img class="gym-card__img" src="{{ image }}" alt="gym img" />
-
-  <div class="gym-card__info">
-    <button class="gym-card__info-title" (click)="emitirEjercicios()"> {{ button }} </button>
-  </div>
+<div class="card">
+  <div class="face front">
+      <img src="{{ image }}" alt="">
+      <h3> {{ title }} </h3>
+    </div>
+    <div class="face back">
+      <h3> {{ title }} </h3>
+      <p> {{ text }} </p>
+      <div class="link">
+      </div>
+      <button class="gym-card__back-info " (click)="emitirEjercicios()"> {{ button }} </button>
+    </div>
 </div>
-

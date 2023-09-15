@@ -6,8 +6,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./gym-card.component.scss']
 })
 export class GymCardComponent {
- @Input() button: string = "";
  @Input() image: string = "";
+ @Input() button: string = "";
+ @Input() title: string = "";
+ @Input() text: string = "";
  @Output() ejercicios = new EventEmitter<string>();
  
  emitirEjercicios() {

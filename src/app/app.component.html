@@ -1,105 +1,14 @@
 <app-navbar></app-navbar>
 
-
 <div class="gym-container">
   <app-gym-card 
-  [button]="'PECHO'" 
-  [image]="'https://skepticaldragoon.es/wp-content/uploads/2019/08/ejercicios-pecho.jpg'" 
-  (ejercicios)="cualEsElEjercicio($event)">
-  
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'TRICEPS'" 
-  [image]="'https://skepticaldragoon.es/wp-content/uploads/2019/08/ejercicios-triceps.jpg'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'BICEPS'" 
-  [image]="'https://i.ytimg.com/vi/2ql_2lw5v-A/maxresdefault.jpg'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'HOMBRO'" 
-  [image]="'https://i.ytimg.com/vi/QhLtriTDdeo/sddefault.jpg'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'CUADRICEPS'" 
-  [image]="'https://skepticaldragoon.es/wp-content/uploads/2019/08/ejercicios-cu%C3%A1driceps-2.jpg'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ISQUIOTIBIALES'" 
-  [image]="'https://reevolvefit.com/wp-content/uploads/2019/11/ISQUIO.jpg'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'GEMELOS'" 
-  [image]="'https://i.ytimg.com/vi/lefpyNtM9ic/maxresdefault.jpg'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
-  (ejercicios)="cualEsElEjercicio($event)">
-  </app-gym-card>
-
-  <app-gym-card 
-  [button]="'ABDOMINALES'" 
-  [image]="'https://d33wubrfki0l68.cloudfront.net/2660a7e0963f90631da5fc592a28d8b8f56943ae/8b71f/images/rutinas_abdominales_entrenar_casa.png'"
+  *ngFor="let rutina of rutinas"
+  [title]="rutina.titulo"
+  [image]="rutina.imagen" 
+  [button]="rutina.boton" 
+  [text]="rutina.texto"
   (ejercicios)="cualEsElEjercicio($event)">
   </app-gym-card>
 </div>
-
-
 
 <router-outlet></router-outlet>

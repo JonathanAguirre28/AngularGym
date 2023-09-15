@@ -1,14 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 html {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
     background-image: url("https://png.pngtree.com/background/20230527/original/pngtree-gym-bench-with-barbells-in-the-background-picture-image_2770491.jpg"); 
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    flex-wrap: wrap;
 }
