@@ -65,6 +65,12 @@ export class AppComponent {
     texto: "Unos gemelos fuertes ayudan en la sujeción y estabilización de la rodilla y del tobillo reduciendo el riesgo de sufrir lesiones.",
   },
   {
+    titulo: "ANTEBRAZOS",
+    imagen: "https://www.calistenia.net/wp-content/uploads/2018/02/forearm-workouts.jpg",
+    boton: "Ir A LA RUTINA",
+    texto: "Unos antebrazos musculados y bien desarrollados, aparte de que te ofrecen buena imagen, te ayudan en un mayor rendimiento deportivo a la hora de entrenar.",
+  },
+  {
     titulo: "CARDIO",
     imagen: "https://eresdeportista.com/wp-content/uploads/2019/02/maquinas-de-cardio-en-el-gimnasio-cinta-de-correr.jpg",
     boton: "Ir A LA RUTINA",
@@ -72,7 +78,7 @@ export class AppComponent {
   },
   {
     titulo: "ABDOMINALES",
-    imagen: "https://img.freepik.com/foto-gratis/ajuste-hombre-sosteniendo-pesas-vista-lateral_23-2149517265.jpg?w=2000",
+    imagen: "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/31/16436341263545.jpg",
     boton: "Ir A LA RUTINA",
     texto: "El fortalecimiento de la musculatura abdominal mantiene los niveles requeridos de fuerza y resistencia, y ayudar a mantener el equilibrio y estabilización de la columna.",
   },
@@ -81,6 +87,18 @@ export class AppComponent {
     imagen: "https://www.fundacioorienta.com/wp-content/uploads/2014/01/F.Orienta_aprendre_dormir_sol-1.jpg",
     boton: "Ir A LA RUTINA",
     texto: "Cuando descansamos, nuestro cuerpo se recupera y reinicia: la memoria mejora, la concentración y capacidad mental mejora y se recupera la energía.",
+  },
+  {
+    titulo: "ESTIRAMIENTO",
+    imagen: "https://previews.123rf.com/images/imagerymajestic/imagerymajestic0903/imagerymajestic090300015/4421444-tipo-de-estiramiento-muscular-las-piernas-y-manos-en-una-acci%C3%B3n-aislada-de-fondo.jpg",
+    boton: "Ir A LA RUTINA",
+    texto: "Estirar ayuda a estimular la circulación saludable en las articulaciones y los músculos. Así pues, se puede evitar que éstas pierdan el flujo sanguíneo y la retención de líquidos.",
+  },
+  {
+    titulo: "DIETA",
+    imagen: "https://hips.hearstapps.com/hmg-prod/images/dieta-fodmap-pros-contras-elle-1660415938.jpg",
+    boton: "Ir A LA DIETA",
+    texto: "Una alimentación saludable ayuda a mantener una buena salud y a prevenir enfermedades no transmisibles como la diabetes, las cardiopatías, los accidentes cerebrovasculares y el cáncer.",
   }
 ];
 
