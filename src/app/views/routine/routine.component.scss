@@ -1,0 +1,12 @@
+.routine {
+    &__conteiner {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        border-radius: 30px;
+        &-button {
+            font-size: 50px;
+        }
+
+    }
+}
