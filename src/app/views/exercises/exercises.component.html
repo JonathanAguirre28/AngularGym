@@ -1,0 +1,10 @@
+<div class="gym-container">
+    <app-gym-card 
+    *ngFor="let rutina of rutinas"
+    [title]="rutina.titulo"
+    [image]="rutina.imagen" 
+    [button]="rutina.boton" 
+    [text]="rutina.texto"
+    (ejercicios)="cualEsElEjercicio($event)">
+    </app-gym-card>
+  </div>
