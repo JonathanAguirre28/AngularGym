@@ -1,19 +1,48 @@
-<section class="routine">
-<div class="routine__conteiner">
-  <button class="routine__conteiner-button">PECTORALES</button>
-  <button class="routine__conteiner-button">TRICEPS</button>
-  <button class="routine__conteiner-button">BICEPS</button>
-  <button class="routine__conteiner-button">ESPALDA</button>
-  <button class="routine__conteiner-button">TRAPACIOS</button>
-  <button class="routine__conteiner-button">HOMBROS</button>
-  <button class="routine__conteiner-button">GEMELOS</button>
-  <button class="routine__conteiner-button">ANTEBRAZOS</button>
-  <button class="routine__conteiner-button">CUADRICEPS</button>
-  <button class="routine__conteiner-button">IZQUIOTIBIALES</button>
-  <button class="routine__conteiner-button">CARDIO</button>
-  <button class="routine__conteiner-button">ABDOMINALES</button>
-  <button class="routine__conteiner-button">DESCANZO</button>
-  <button class="routine__conteiner-button">ESTIRAMIENTO</button>
-  <button class="routine__conteiner-button">DIETA</button>
-</div>
+<section class="container">
+
+<section class="container__routine">
+  <ng-template #desktop>
+    <div class="container__routine-button">
+      <button class="container__routine-button-exercises" 
+      *ngFor="let exercise of exercises"
+      > {{ exercise }}
+    </button>
+    </div>
+  </ng-template>
+<mat-form-field *ngIf="mobile; else desktop">
+  <mat-label>RUTINAS</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let topping of exercises" [value]="topping">{{topping}}</mat-option>
+  </mat-select>
+</mat-form-field>
+</section>
+
+<section class="container__card">
+  <div class="container__card-img">
+    <h1 class="container__card-img-title">PECTORALES</h1>
+    <img src="https://img.freepik.com/foto-gratis/hombre-fuerte-entrenando-gimnasio_1303-23478.jpg" alt="imgTriceps" class="routine__card-img-conteiner">
+  </div>
+  <div class="container__card-table">
+     <table class="container__card-table-conteiner">
+        <thead class="colorwhite">
+          <tr>
+            <th>EJERCICIOS</th><th>SERIES</th><th>REPETICIONES</th>
+          </tr>
+          <tr>
+            <td>PRESS DE BANCA CON BARRA EN BANCO PLANO</td><td>4</td><td>12</td>
+          </tr>
+          <tr>
+            <td>PRESS DE BANCA CON BARRA EN BANCO INCLINADO</td><td>4</td><td>12</td>
+          </tr>
+          <tr>
+            <td>BPRESS DE BANCA CON BARRA EN BANCO DECLINADO</td><td>4</td><td>12</td>
+          </tr>
+           <tr>
+            <td>APERTURAS DE PECHO EN MAQUINAS</td><td>4</td><td>12</td>
+           </tr>
+        </thead>
+     </table>
+    
+  </div>
+</section>
 </section>

@@ -1,12 +1,71 @@
-.routine {
-    &__conteiner {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-        border-radius: 30px;
-        &-button {
-            font-size: 50px;
-        }
+.container {
+    &__routine {
+    height: 100%;
+    width: 100%;
+    &-button {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      border-radius: 30px;
 
+      &-exercises {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    &__card {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin: 15px;
+      padding: 15px;
+
+      &-img{
+        &-title {
+          color: white;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      &-table {
+        background-color: darkgrey;
+        margin: 150px auto;
+        width: 600px;
+        border-collapse: collapse;
+
+        &-conteiner{
+          text-align: left;
+          width: 100%;
+
+          & th,
+          td {
+            border: solid 1px white;
+            padding: 10px;
+          }
+
+          & td {
+            background-color: #4CAF50;
+          }
+        }
+      }
+    }
+  }
+}
+
+.colorwhite {
+  color: white;
+}
+
+@media (min-width: 200px ) and (max-width: 700px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
