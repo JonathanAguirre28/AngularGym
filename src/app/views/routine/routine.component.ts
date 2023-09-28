@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
@@ -7,6 +7,13 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./routine.component.scss']
 })
 export class RoutineComponent {
+  
+  @Input() titulo: string = "";
+  @Input() imagen: string = "";
+  @Input() ejercicios: string = '';
+  @Input() series: string = "";
+  @Input() repeticiones: string = "";
+
   exercises: string [] = ['PECTORALES','TRICEPS','ESPALDA','TRAPECIOS','HOMBROS','GEMELOS','ANTEBRAZOS','CUADRICEPS','IZQUIOTIBIALES','CARDIO','ABDOMINALES','DESCANZO','ESTIRAMIENTO','DIETA']
 
   mobile: boolean = false;
@@ -15,6 +22,9 @@ export class RoutineComponent {
     {
       titulo: "PECTORALES",
       imagen: "https://img.freepik.com/foto-gratis/hombre-fuerte-entrenando-gimnasio_1303-23478.jpg",
+      ejercicios:'PRESS DE BANCA CON BARRA EN BANCO PLANO',
+      series:'4',
+      repeticiones:'12',
     },
   ]
 
