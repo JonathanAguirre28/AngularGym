@@ -17,10 +17,11 @@
 </mat-form-field>
 </section>
 
-<section class="container__card">
+<section class="container__card" 
+*ngFor="let rutine of rutines">
   <div class="container__card-right">
-    <h1 class="container__card-right-title">PECTORALES</h1>
-    <img src="https://i.ytimg.com/vi/cCUWW80DVMA/maxresdefault.jpg" alt="imgTriceps" class="container__card-right-img">
+    <h1 class="container__card-right-title"> {{ rutine.titulo }} </h1>
+    <img src="{{ rutine.imagen }}" alt="imgTriceps" class="container__card-right-img">
   </div>
   <div class="container__card-left">
      <table class="container__card-left-table">
@@ -28,19 +29,12 @@
           <tr>
             <th>EJERCICIOS</th><th>SERIES</th><th>REPETICIONES</th>
           </tr>
-          <tr>
-            <td>PRESS DE BANCA CON BARRA EN BANCO PLANO</td><td>4</td><td>12</td>
-          </tr>
-          <tr>
-            <td>PRESS DE BANCA CON BARRA EN BANCO INCLINADO</td><td>4</td><td>12</td>
-          </tr>
-          <tr>
-            <td>BPRESS DE BANCA CON BARRA EN BANCO DECLINADO</td><td>4</td><td>12</td>
-          </tr>
-           <tr>
-            <td>APERTURAS DE PECHO EN MAQUINAS</td><td>4</td><td>12</td>
-           </tr>
         </thead>
+         <tbody>
+          <tr *ngFor="let ejercicio of rutine?.ejercicios">
+            <td> {{ ejercicio.name }} </td><td> {{ rutine.series }} </td><td> {{ rutine.repeticiones }} </td>
+          </tr>
+        </tbody>       
      </table>
     
   </div>
