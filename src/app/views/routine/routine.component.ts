@@ -16,8 +16,8 @@ export class RoutineComponent {
 
   exercises: string [] = ['PECTORALES','TRICEPS','ESPALDA','BICEPS','TRAPECIOS','HOMBROS','GEMELOS','ANTEBRAZOS','CUADRICEPS','IZQUIOTIBIALES','CARDIO','ABDOMINALES','DESCANZO','ESTIRAMIENTO','DIETA']
 
-  mobile: boolean = false;
-
+  mobile: boolean = false;  
+  
   rutines = [
     {
       titulo: "PECTORALES",
@@ -41,7 +41,7 @@ export class RoutineComponent {
       repeticiones:'12',
     },
     {
-      titulo: "TRCIPES",
+      titulo: "TRICEPS",
       imagen: "https://album.mediaset.es/eimg/10000/2020/10/29/clipping_auJ8bQ_2243.jpg?w=1200",
       ejercicios: [
         {
@@ -167,7 +167,7 @@ export class RoutineComponent {
       repeticiones:'12',
     },
     {
-      titulo: "ENTEBRAZOS",
+      titulo: "ANTEBRAZOS",
       imagen: "https://www.calistenia.net/wp-content/uploads/2018/02/forearm-workouts.jpg",
       ejercicios: [
         {
@@ -209,7 +209,7 @@ export class RoutineComponent {
       repeticiones:'12',
     },
     {
-      titulo: "ISQUIOTIBIALES",
+      titulo: "IZQUIOTIBIALES",
       imagen: "https://blogscdn.thehut.net/app/uploads/sites/450/2021/08/shutterstock_1410466751opt_hero_1627301884_1628077319.jpg",
       ejercicios: [
         {
@@ -322,14 +322,15 @@ export class RoutineComponent {
         },
         {
           name: "VERDURAS",
-
+          
         },
       ],
       series:'4',
       repeticiones:'COMIDAS DIARIAS',
     }
   ]
-
+  
+  originalRutines = [...this.rutines];
 
 constructor(private breakpointObserver: BreakpointObserver) {}
 
@@ -341,4 +342,12 @@ this.mobile = true;
 }
 });
 }
+
+FiltrarRutina(titulo: string) {
+  this.rutines = this.originalRutines.filter((rutine) => {
+    return rutine.titulo === titulo;
+  });
 }
+}
+
+

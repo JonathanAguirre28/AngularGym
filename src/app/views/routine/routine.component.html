@@ -1,43 +1,47 @@
 <section class="container">
 
-<section class="container__routine">
-  <ng-template #desktop>
-    <div class="container__routine-button">
-      <button class="container__routine-button-exercises" 
-      *ngFor="let exercise of exercises"
-      > {{ exercise }}
-    </button>
+  <section class="container__routine">
+    <ng-template #desktop>
+      <div class="container__routine-button">
+        <button (click)="FiltrarRutina(exercise)" class="container__routine-button-exercises"
+          *ngFor="let exercise of exercises"> {{ exercise }}
+        </button>
+      </div>
+    </ng-template>
+
+    <mat-form-field *ngIf="mobile; else desktop" class="container__Button">
+      <mat-label class="container__Button-mat">RUTINAS</mat-label>
+      <mat-select>
+        <mat-option (click)="FiltrarRutina(exercise)" *ngFor="let exercise of exercises" [value]="exercise"
+          class="container__Button-mat">{{ exercise }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </section>
+
+  <section class="container__card" *ngFor="let rutine of rutines">
+    <div class="container__card-right">
+      <h1 class="container__card-right-title"> {{ rutine.titulo }} </h1>
+      <img src="{{ rutine.imagen }}" alt="imgTriceps" class="container__card-right-img">
     </div>
-  </ng-template>
-<mat-form-field *ngIf="mobile; else desktop" class="container__Button">
-  <mat-label class="container__Button-mat">RUTINAS</mat-label>
-  <mat-select>
-    <mat-option *ngFor="let topping of exercises" [value]="topping" class="container__Button-mat">{{topping}}</mat-option>
-  </mat-select>
-</mat-form-field>
-</section>
 
-<section class="container__card" 
-*ngFor="let rutine of rutines">
-  <div class="container__card-right">
-    <h1 class="container__card-right-title"> {{ rutine.titulo }} </h1>
-    <img src="{{ rutine.imagen }}" alt="imgTriceps" class="container__card-right-img">
-  </div>
-
-  <div class="container__card-left">
-     <table class="container__card-left-table dieta">
+    <div class="container__card-left">
+      <table class="container__card-left-table dieta">
         <thead class="colorwhite">
           <tr>
-            <th>EJERCICIOS</th><th>SERIES</th><th>REPETICIONES</th>
+            <th>EJERCICIOS</th>
+            <th>SERIES</th>
+            <th>REPETICIONES</th>
           </tr>
         </thead>
-         <tbody>
+        <tbody>
           <tr *ngFor="let ejercicio of rutine?.ejercicios">
-            <td> {{ ejercicio.name }} </td><td> {{ rutine.series }} </td><td> {{ rutine.repeticiones }} </td>
+            <td> {{ ejercicio.name }} </td>
+            <td> {{ rutine.series }} </td>
+            <td> {{ rutine.repeticiones }} </td>
           </tr>
-        </tbody>       
-     </table>
-  </div>
+        </tbody>
+      </table>
+    </div>
 
- </section>
+  </section>
 </section>

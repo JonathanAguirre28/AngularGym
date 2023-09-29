@@ -10,9 +10,5 @@ export class GymCardComponent {
  @Input() button: string = "";
  @Input() title: string = "";
  @Input() text: string = "";
- @Output() ejercicios = new EventEmitter<string>();
  
- emitirEjercicios() {
-  this.ejercicios.emit(this.button);
- }
 }
