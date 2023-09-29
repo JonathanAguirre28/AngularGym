@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExercisesComponent } from './views/exercises/exercises.component';
 import { RoutineComponent } from './views/routine/routine.component';
 import { VideosComponent } from './views/videos/videos.component';
+import { UsersComponent } from './views/users/users.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'videos',
     component: VideosComponent
+  },
+  {
+    path: 'users',
+    component: UsersComponent
   },
   {
     path:'**',

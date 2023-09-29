@@ -337,7 +337,6 @@ constructor(private breakpointObserver: BreakpointObserver) {}
 ngOnInit() {
 this.breakpointObserver.observe(Breakpoints.HandsetPortrait).subscribe(result => {
 if (result.matches) {
-// hacer algo si el ancho de la pantalla es menor o igual a 599.99px y está en orientación vertical
 this.mobile = true;
 }
 });

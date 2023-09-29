@@ -12,6 +12,7 @@ import { VideosComponent } from './views/videos/videos.component';
 import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UsersComponent } from './views/users/users.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     ExercisesComponent,
     RoutineComponent,
-    VideosComponent
+    VideosComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
