@@ -69,18 +69,61 @@
 }
 
 @media (min-width: 200px ) and (max-width: 700px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        &__card {
+  .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      &__card {
+          flex-direction: column; 
+          text-align: center; 
+          margin: 15px 0; 
+          padding: 0;
+          
           &-right {
-            &-img {
-              width: 200px;
-              height: 200px;
-            }
+              &-img {
+                  width: 94%;
+                  height: 200px;
+              }
+              &-title {
+                  color: white;
+                  display: flex;
+                  justify-content: center;
+              }
           }
+          
+          &-left {
+              background-color: #4CAF50;
+              width: 100%; 
+              margin-top: 20px; 
+              
+              &-table {
+                  text-align: center; 
+                  width: 100%;
+                  overflow-x: auto; 
+                  
+                  & th,
+                  td {
+                      border: solid 1px white;
+                      padding: 8px; 
+                  }
+                  
+                  & td {
+                      background-color: #4CAF50;
+                  }
+              }
+          }
+      }
+      &__Button {
+        &-mat {
+          background-color: #4CAF50;
         }
-    }
+      }
+  }
+  .container__card-left-table.dieta {
+    font-size: 14px; 
 }
+}
+
+

@@ -9,10 +9,10 @@
     </button>
     </div>
   </ng-template>
-<mat-form-field *ngIf="mobile; else desktop">
-  <mat-label>RUTINAS</mat-label>
+<mat-form-field *ngIf="mobile; else desktop" class="container__Button">
+  <mat-label class="container__Button-mat">RUTINAS</mat-label>
   <mat-select>
-    <mat-option *ngFor="let topping of exercises" [value]="topping">{{topping}}</mat-option>
+    <mat-option *ngFor="let topping of exercises" [value]="topping" class="container__Button-mat">{{topping}}</mat-option>
   </mat-select>
 </mat-form-field>
 </section>
@@ -23,8 +23,9 @@
     <h1 class="container__card-right-title"> {{ rutine.titulo }} </h1>
     <img src="{{ rutine.imagen }}" alt="imgTriceps" class="container__card-right-img">
   </div>
+
   <div class="container__card-left">
-     <table class="container__card-left-table">
+     <table class="container__card-left-table dieta">
         <thead class="colorwhite">
           <tr>
             <th>EJERCICIOS</th><th>SERIES</th><th>REPETICIONES</th>
@@ -36,7 +37,7 @@
           </tr>
         </tbody>       
      </table>
-    
   </div>
-</section>
+
+ </section>
 </section>
