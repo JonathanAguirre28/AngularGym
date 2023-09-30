@@ -338,6 +338,8 @@ ngOnInit() {
 this.breakpointObserver.observe(Breakpoints.HandsetPortrait).subscribe(result => {
 if (result.matches) {
 this.mobile = true;
+}else {
+  this.mobile = false;
 }
 });
 }
