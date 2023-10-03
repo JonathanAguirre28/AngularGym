@@ -1,27 +1,38 @@
 # AngularGymPuma
+################################################ Link al deploy:https://gym-puma.web.app/exercises
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
-## Development server
+<h1 align="left">Hey 👋 What's up?</h1>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+###
 
-## Code scaffolding
+<p align="left"My name is Jonatahn Adrian Aguirre and I'm a Full Stack developer , from Argentina.</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+###
 
-## Build
+<h2 align="left">About me</h2>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+###
 
-## Running unit tests
+📚 I'm currently learning Java
+🎯 Goals: Getting my dream job
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+###
 
-## Running end-to-end tests
+<h2 align="left">I code with</h2>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+###
 
-## Further help
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="40" alt="angularjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" height="40" alt="sass logo"  />
+</div>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+###
