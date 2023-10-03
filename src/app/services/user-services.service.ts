@@ -7,9 +7,14 @@ import { Observable } from 'rxjs';
 })
 export class UserServicesService {
 
-  constructor(private http:HttpClient) {}
+  constructor(private http:HttpClient) { }
+
     traerUsuarios(): Observable<any> {
       return this.http.get('https://jsonplaceholder.typicode.com/users')
+    }
+
+    saveUsers(usuarios:any): Observable<null> {
+      return this.http.post<null>('https://jsonplaceholder.typicode.com/posts', usuarios)
     }
   }
 

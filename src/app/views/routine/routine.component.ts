@@ -345,6 +345,7 @@ this.mobile = true;
 }
 
 FiltrarRutina(titulo: string) {
+  console.log(titulo)
   this.rutines = this.originalRutines.filter((rutine) => {
     return rutine.titulo === titulo;
   });

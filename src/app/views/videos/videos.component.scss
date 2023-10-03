@@ -1,0 +1,30 @@
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    &__title {
+        color: white;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        &__video {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}

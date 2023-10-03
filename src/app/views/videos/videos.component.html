@@ -1,1 +1,7 @@
-<p>videos works!</p>
+<section class="container" *ngFor="let item of videos">
+    <div class="container__title">
+        <h2>{{ item.titulo }}</h2>
+    </div>
+    <iframe class="container__video" width="500" height="300" [src]="sanitizer.bypassSecurityTrustResourceUrl(item.video)" title="Mi rutina con los mejores ejercicios de pecho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+

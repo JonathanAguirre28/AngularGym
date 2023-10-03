@@ -1,3 +1,53 @@
-<div>
-
+<h1 class="users">USUARIOS</h1>
+<div class="users__button">
+  <button class="users__button-container" (click)="saveUsers()">Agregar Usuarios</button>
+</div>
+<div class="users__container">
+  <div class="users__container-card" *ngFor="let item of users">
+    <div class="users__container-card-text">
+        {{ "ID: " + item.id  }}
+      </div>
+    <div class="container__card-text">
+      {{ "NAME: " + item.name }}
+    </div>
+    <div class="container__card-text">
+      {{ "USERNAME: " + item.username }}
+    </div>
+    <div class="container__card-text">
+      {{ "EMAIL: "+item.email }}
+    </div>
+    <div class="container__card-text">
+      {{ " ADRRESS STREET: " + item.address.street }}
+    </div>
+    <div class="container__card-text">
+        {{ " ADRRESS SUITE: " + item.address.suite }}
+      </div>
+      <div class="container__card-text">
+        {{ " ADDRESS CITY: " + item.address.city }}
+      </div>
+      <div class="container__card-text">
+        {{ "ADDRESS ZIPCODE: " + item.address.zipcode }}
+      </div>
+       <div class="container__card-text">
+        {{ "GEO LAT: " + item.address.geo.lat }}
+      </div>
+      <div class="container__card-text">
+        {{ "GEO LNG: " + item.address.geo.lng }}
+      </div>
+      <div class="container__card-text">
+        {{ "PHONE: " + item.phone }}
+      </div>
+      <div class="container__card-text">
+        {{ "WEBSITE: " + item.website }}
+      </div>
+      <div class="container__card-text">
+        {{ "COMPANY NAME: " + item.company.name }}
+      </div>
+      <div class="container__card-text">
+        {{ "COMPANY CATCHPHRASE: " + item.company.catchPhrase }}
+      </div>
+      <div class="container__card-text">
+        {{ "COMPANY BS: " + item.company.bs }}
+      </div>
+  </div>
 </div>

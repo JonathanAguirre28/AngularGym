@@ -1,0 +1,39 @@
+.users {
+    color: white;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    &__button {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 220px;
+      &-container {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 80px;
+
+    &-card {
+      background-color: rgb(77, 147, 33);
+      border: 1px solid rgb(4, 245, 136);
+      padding: 15px;
+      max-width: 600px;
+      margin: 15px;
+      color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
